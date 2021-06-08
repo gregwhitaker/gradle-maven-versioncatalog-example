@@ -1,0 +1,15 @@
+rootProject.name = 'service-b'
+
+enableFeaturePreview("VERSION_CATALOGS")
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        repositories {
+            mavenLocal()
+        }
+
+        libs {
+            from("com.github.gregwhitaker.versioncatalog:version-catalog:0.1.0")
+        }
+    }
+}

@@ -1,0 +1,29 @@
+plugins {
+    id "version-catalog"
+    id "maven-publish"
+}
+
+// Project Configuration
+project.group = "com.github.gregwhitaker.versioncatalog"
+project.version = "0.1.0"
+
+// Version Catalog
+catalog {
+    versionCatalog {
+        alias("slf4j-api").to("org.slf4j:slf4j-api:1.7.30")
+    }
+}
+
+// Dependencies
+repositories {
+    mavenLocal()
+}
+
+// Publishing
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.versionCatalog
+        }
+    }
+}

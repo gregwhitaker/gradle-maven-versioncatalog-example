@@ -1,0 +1,15 @@
+plugins {
+    id "idea"
+    id "java"
+}
+
+project.group = "com.github.gregwhitaker"
+project.version = "0.1.0"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation libs.slf4j.api
+}
