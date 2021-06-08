@@ -1,10 +1,3 @@
-# gradle-maven-versioncatalog-example
-An example of enforcing dependency versions using a [Gradle Version Catalog](https://docs.gradle.org/current/userguide/platforms.html) published to a Maven repository.
-
-In this example `service-a` and `service-b` both have a dependency on the `slf4j-api` library. The version of the dependent library is not defined in the projects, but is 
-instead defined in the `version-catalog` project that both service projects import via `settings.gradle`
-
-## License
 MIT License
 
 Copyright (c) 2021 Greg Whitaker
